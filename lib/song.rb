@@ -41,8 +41,8 @@ class Song
     end
   end
 
-  def artist_count
-    artist_count = Hash.new
+  def self.artist_count
+    artist_count = Hash.new(0)
 
     @@artists.each do |x|
       if x == "Metallica"
