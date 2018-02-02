@@ -17,12 +17,7 @@ class Song
         @@genres.push(g)
       end
     end
-    @@artists.each do |x|
-      if x == a
-      else
-        @@artists.push(a)
-      end
-    end
+    @@artists.push(a)
   end
 
   def self.count
