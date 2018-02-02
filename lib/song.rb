@@ -5,6 +5,7 @@ class Song
   @@count = 0
   @@genres = Array.new
   @@artists = Array.new
+  @@artist_count = Hash.new(0)
 
   def initialize(n, a, g)
     @name = n
@@ -43,8 +44,6 @@ class Song
   end
 
   def self.artist_count
-    artist_count = Hash.new(0)
-
     @@artists.each do |x|
       artist_count.each do |key, value|
         if x == key
