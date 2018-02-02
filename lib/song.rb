@@ -46,7 +46,7 @@ class Song
     artist_count = Hash.new(0)
 
     @@artists.each do |x|
-      if x == "Metallica"
+      if x == @artist
         artist_count["Metallica"] += 1
       else
         artist_count[x] = 1
