@@ -31,8 +31,8 @@ class Song
     genre_count = Hash.new
 
     @@genres.each do |x|
-      if x == "Rap"
-          genre_count["Rap"] += 1
+      if x == "rap"
+          genre_count["rap"] += 1
       else
         genre_count[x] = 1
       end
