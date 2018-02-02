@@ -33,6 +33,7 @@ class Song
       else
         genre_count[x] = 1
       end
+    end
   end
 
   def artist_count
@@ -44,7 +45,7 @@ class Song
       else
         artist_count[x] = 1
       end
+    end
   end
-
 
 end
