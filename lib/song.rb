@@ -12,13 +12,13 @@ class Song
     @genre = g
     @@count += 1
     @@genres.each do |x|
-      if x == "rap"
+      if x == g
       else
         @@genres.push(g)
       end
     end
     @@artists.each do |x|
-      if x == "Boris Brejcha"
+      if x == a
       else
         @@artists.push(a)
       end
