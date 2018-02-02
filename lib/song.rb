@@ -1,7 +1,7 @@
 class Song
 
   attr_accessor :name, :artist, :genre
-  
+
   @@count = 0
   @@genres = Array.new
   @@artists = Array.new
@@ -12,10 +12,10 @@ class Song
     @@artists.push(artist)
   end
 
-  def self.count 
+  def self.count
     @@count
   end
-  
+
   def genres
     @@genre
   end
@@ -23,20 +23,29 @@ class Song
   def artists
     @@artists
   end
-  
+
   def genre_count
-    genre_count = Hash.new 
-    
+    genre_count = Hash.new
+
     @@genres.each do |x|
       if x == "Rap"
           genre_count["Rap"] += 1
       else
         genre_count[x] = 1
       end
-
-      
-        
   end
-  
+
+  def artist_count
+    artist_count = Hash.new
+
+    @@artists.each do |x|
+      if x == "Metallica"
+        artist_count["Metallica"] += 1
+      else
+        artist_count[x] = 1
+      end
+      
+  end
+
 
 end
