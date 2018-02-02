@@ -46,12 +46,14 @@ class Song
     artist_count = Hash.new(0)
 
     @@artists.each do |x|
-      if x == @artist
-        artist_count[x] += 1
-      else
-        artist_count[x] = 1
-      end
-    end
+      artist_count.each do |key, value|
+        if x == key
+          artist_count[x] += 1
+        else
+          artist_count[x] = 1
+        end
+     end
+   end
     artist_count
   end
 
