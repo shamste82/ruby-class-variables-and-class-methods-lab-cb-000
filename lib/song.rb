@@ -11,12 +11,7 @@ class Song
     @artist = a
     @genre = g
     @@count += 1
-    @@genres.each do |x|
-      if x == g
-      else
-        @@genres.push(g)
-      end
-    end
+    @@genres.push(g)
     @@artists.push(a)
   end
 
