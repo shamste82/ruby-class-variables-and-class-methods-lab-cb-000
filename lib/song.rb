@@ -20,7 +20,7 @@ class Song
   end
 
   def genres
-    @@genre
+    @@genres
   end
 
   def artists
