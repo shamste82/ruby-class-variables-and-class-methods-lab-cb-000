@@ -11,8 +11,18 @@ class Song
     @artist = a
     @genre = g
     @@count += 1
-    @@genres.push(g)
-    @@artists.push(a)
+    @@genres.each do |x|
+      if x == "rap"
+      else
+        @@genres.push(g)
+      end
+    end
+    @@artists.each do |x|
+      if x == "Boris Brejcha"
+      else
+        @@artists.push(a)
+      end
+    end
   end
 
   def self.count
