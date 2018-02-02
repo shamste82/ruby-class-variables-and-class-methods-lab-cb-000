@@ -36,7 +36,7 @@ class Song
       if x == "rap"
           genre_count[x] += 1
       else
-        genre_count[x] => 1
+        genre_count[x] = 1
       end
     end
   end
