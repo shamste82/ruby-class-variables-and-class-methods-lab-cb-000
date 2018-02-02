@@ -6,7 +6,10 @@ class Song
   @@genres = Array.new
   @@artists = Array.new
 
-  def initialize
+  def initialize(n, a, g)
+    @name = n
+    @artist = a
+    @genre = g
     @@count += 1
     @@genres.push(genre)
     @@artists.push(artist)
